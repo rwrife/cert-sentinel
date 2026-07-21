@@ -7,6 +7,7 @@ from .fetch import (
     fetch_certificate,
     fetch_certificates,
 )
+from .inspect import CertificateInfo, inspect_certificate
 
 __all__ = [
     "CertificateFetchError",
@@ -14,4 +15,6 @@ __all__ = [
     "CertificateConnectionError",
     "fetch_certificate",
     "fetch_certificates",
+    "CertificateInfo",
+    "inspect_certificate",
 ]
