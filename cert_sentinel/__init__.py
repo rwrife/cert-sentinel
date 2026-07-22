@@ -1,5 +1,6 @@
 """cert-sentinel package."""
 
+from .evaluate import EvaluationResult, evaluate
 from .fetch import (
     CertificateConnectionError,
     CertificateFetchError,
@@ -10,6 +11,8 @@ from .fetch import (
 from .inspect import CertificateInfo, inspect_certificate
 
 __all__ = [
+    "EvaluationResult",
+    "evaluate",
     "CertificateFetchError",
     "CertificateTimeoutError",
     "CertificateConnectionError",
